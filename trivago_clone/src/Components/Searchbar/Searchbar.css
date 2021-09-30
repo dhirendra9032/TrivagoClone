@@ -1,0 +1,197 @@
+
+.searchbar-holder{
+    width: 100%;
+    height: 200px;
+    background: rgb(238, 237, 236);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.row{
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper_1{
+ display: flex;
+ height: 40px;
+ margin-bottom: 1px;
+}
+.wrapper_2{
+    display: flex;
+    padding: 8px;    
+    height: 40px;
+    background: #fff;
+    border: 1px solid rgb(212, 212, 210);
+    border-radius: 5px;
+}
+
+.wrapper_3{
+ height: 50px;
+
+}
+.all{
+    border: 1px solid rgb(212, 212, 210);
+    border-bottom: none;
+    width: 90px;
+    margin-right: 5px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: rgb(221, 241, 245);
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 40px;
+   
+}
+.icon img{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+.all:hover{
+  
+    background: #fff;
+    border-bottom: 4px solid #fff;
+}
+.hotel{
+    
+    border: 1px solid rgb(212, 212, 210);
+    border-bottom: none;
+    width: 70px;
+}
+.appr{
+  
+    border: 1px solid rgb(212, 212, 210);
+    border-bottom: none;
+    width: 150px;
+}
+.inp-holder-1{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid rgb(212, 212, 210);
+    height: 40px;
+   width: 33.333%;
+}
+.inputbox-1{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+.inputbox-1 input{
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+.buttonbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 40px;
+   
+}
+.buttonbox button{
+    background: none;
+    border: none;
+    color: rgb(139, 139, 139);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+.buttonbox button:hover{
+    text-align: center;
+    background: rgb(219, 248, 247);
+    border-radius: 5px;
+}
+.inp-holder-2{
+    display: flex;
+    height: 40px;
+    width: 33.333%;
+    border-right: 1px solid rgb(212, 212, 210);
+}
+.inp-holder-3{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 33.333%;
+    flex-direction: row;
+    border-left: 1px solid rgb(212, 212, 210);
+}
+.search-btn{
+    width: 50%;
+    justify-items: flex-end;
+    margin-right: 0;
+    
+
+}
+.search-btn button{
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    background: rgb(51, 125, 209);
+    cursor: pointer;
+}
+.search-btn button:hover{
+    background: rgb(38, 103, 177);
+}
+.add-on{
+    width: 40%;
+    font-size: 12px;
+    cursor: pointer;
+}
+.heading{
+    height: 20px;
+}
+.images-holder{
+    color: rgb(129, 129, 129);
+    display: flex;
+    justify-content: space-between;
+}
+.images-holder img{
+    padding-top:10px ;
+height: 22px;
+}
+.datepicker-holder{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(107, 104, 104);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.datepicker-holder input{
+    width: 70px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.datepicker-1{
+    width: 120px;
+    padding-left: 10px;
+    border-right: 1px solid rgb(168, 168, 168);
+}
+.datepicker-2{
+    padding-left: 10px;
+   
+}
+
+
