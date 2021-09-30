@@ -1,0 +1,214 @@
+.main-container{
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    margin-left: 80px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(1,600px 600px);
+}
+
+.main-container--div{
+    /* border: 2px solid red; */
+    padding: 5px;
+    margin-left: 20px;
+}
+.main-container--div h3{
+    font-size: 18px;
+    color: #007FAD;
+    text-align: left;
+    /* letter-spacing: 0.5px; */
+}
+
+.main-container--div p{
+    font-size: 14px;
+    color: #0A1121;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+.main-container-2{
+    height: 250px;
+    width: 1200px;
+    margin: auto;
+    margin-left: 80px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
+
+.main-container-2--div{
+    height: 250px;
+    width: 600px;
+    /* border: 2px solid red; */
+}
+.main-container-2--div h3{
+    color: #007FAD;
+    text-align: left;
+}
+.cities{
+    height: 180px;
+    width: 580px; 
+    /* border: 2px solid blue; */
+    overflow: scroll;
+    display: flex;
+    /* grid-template-columns: repeat(2,120px 120px); */
+}
+.cities-1{
+    height: 220px;
+    width: 200px;
+    /* border: 2px solid rgb(255, 238, 0); */
+    text-align: left;
+    line-height: 50%;
+    font-size: 14px;
+}
+
+.cities-2{
+    height: 220px;
+    width: 200px;
+    /* border: 2px solid rgb(255, 238, 0); */
+    margin-left: 100px;
+    text-align: left;
+    line-height: 50%;
+    font-size: 14px;
+}
+
+.parent-div{
+    height: 550px;
+    width: 100%;
+    background-color: #0A1121;
+    margin-top: 70px;
+}
+
+.child-div-1{
+    height: 100px;
+    width: 950px;
+    /* border: 2px solid white; */
+    margin-left: 200px;
+    margin-top: 10px;
+    display: flex;
+}
+.child-div-1 p{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+.child-div-1 input{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 50px;
+    border-style: none;
+    margin-top: 20px;
+}
+::placeholder {
+    font-size: 16px;
+    margin: auto;
+    margin-left: 20px;
+  }
+  .child-div-1 button{
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 900;
+    color: white;
+    background-color: #697379;
+    border-style: none;
+  }
+  .child-div-1 button:hover{
+    background-color: #0A1121;
+  }
+  .line{
+    border: 1px solid #697379;
+    
+  }
+.line-div{
+    width: 950px;
+    margin-left: 200px;
+}
+.child-div-2{
+    height: 80px;
+    width: 950px;
+    /* border: 1px solid red; */
+    margin-left: 200px;
+    display: flex;
+}
+.child-div-2 button{
+   margin-top: 20px;
+}
+.child-div-2 p{
+    color: white;
+    font-size: 14px;
+}
+.dropbtn{
+    height: 45px;
+    width: 300px;
+    margin-left: 270px;
+    border-radius: 5px;
+    background-color: #0A1121;
+    border: 1px solid white;
+}
+.dropbtn img{
+    height: 15px;
+    width: 25px;
+    margin-left: -250px;
+    margin-top: 10px;
+}
+.dropbtn p{
+    color: white;
+    margin-left: -180px;
+    margin-top: -18px;
+}
+.icons{
+    height: 50px;
+    width: 950px;
+    /* border: 1px solid white; */
+    margin-left: 200px;
+    display: flex;
+}
+.icons img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding: 7px;
+}
+.child-div-3{
+    height: 150px;
+    width: 950px;
+    /* border: 1px solid red; */
+    margin-left: 200px;
+    display: flex;
+}
+.child-div-3--divs{
+    height: 150px;
+    width: 315px;
+    /* border: 1px solid rgb(94, 255, 0); */
+}
+.child-div-3--divs p{
+    color: white;
+    text-align: left;
+    letter-spacing: 0.2px;
+    line-height: 45%;
+    font-size: 14px;
+}
+.child-div-4{
+    height: 60px;
+    width: 200px;
+    /* border: 1px solid rgb(94, 255, 0); */
+    margin-left: 550px;
+}
+.child-div-4 h1{
+    color: white;
+    text-align: center;
+}
+.child-div-5{
+    height: 30px;
+    width: 300px;
+    /* border: 1px solid rgb(94, 255, 0); */
+    margin-left: 500px;
+}
+.child-div-5 p{
+    color: white;
+    font-size: 12px;
+}

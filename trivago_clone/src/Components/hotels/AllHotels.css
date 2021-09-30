@@ -1,0 +1,144 @@
+.parent-container-allhotels{
+    height: 700px;
+    width: 850px;
+    /* border: 2px solid blue; */
+    background-color: #ebeced;
+}
+.sort-div{
+  /* border: 2px solid black; */
+}
+.sort-div label select{
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  
+}
+
+.sort-div label{
+    font-weight: 600;
+    margin-left: -500px;
+}
+.hotel-info-div{
+  height: 250px;
+  width: 800px;
+  /* border: 2px solid red; */
+  margin-left: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  background-color: white;
+}
+.hotel-info-div img{
+  height: 240px;
+  width: 200px;
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.about-hotel{
+  height: 240px;
+  width: 300px;
+  /* border: 1px solid rgb(0, 189, 247); */
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.rat-div{
+  height: 40px;
+  width: 150px;
+  /* border: 2px solid seagreen; */
+  display: flex;
+  margin-top: -30px;
+}
+.about-hotel h3{
+  margin-top: -0.5px;
+  text-align: left;
+}
+.popular-choice{
+  height: 40px;
+  width: 150px;
+  /* border: 2px solid seagreen; */
+  display: flex;
+}
+.hotels{
+  border: none;
+}
+.location{
+  height: 40px;
+  width: 250px;
+  /* border: 2px solid seagreen; */
+  display: flex;
+}
+.location label select {
+  margin-left: 50px;
+  background-color: #ebeced;
+}
+
+.rating{
+  height: 40px;
+  width: 250px;
+  /* border: 2px solid seagreen; */
+  display: flex;
+
+}
+.rating label select {
+  margin-left: 15px;
+  background-color: #ebeced;
+}
+.view-detail-div{
+  height: 120px;
+  width: 280px;
+  /* border: 1px solid rgb(247, 140, 0); */
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #F1F8EA;
+}
+.view-detail{
+  height: 35px;
+  width: 130px;
+  background-color: #028000;
+  margin-top: -15px;
+  margin-left: 130px;
+  border-radius: 40px;
+  color: white;
+}
+.view-detail h5{
+  text-align: center;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 35px;
+  
+}
+.agoda-price{
+  height: 90px;
+  width: 280px;
+  /* border: 1px solid rgb(247, 140, 0); */
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #fcfcfc;
+  display: flex;
+}
+.agoda-price-div1{
+  height: 80px;
+  width: 100px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 15px;
+  margin-top: 8px;
+  margin-left: 5px;
+  background-color: #fcfcfc;
+}
+.agoda-price-div2{
+  height: 80px;
+  width: 200px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 15px;
+  margin-top: 8px;
+  margin-left: 5px;
+  background-color: #fcfcfc;
+}
+.agoda-price-div1 p{
+  font-size: 12px;
+}

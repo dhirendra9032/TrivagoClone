@@ -1,6 +1,6 @@
 import React from "react";
 import { Slider } from "../Components/Slider/Slider";
-// import Footer from "../Components/Footer/Footer";
+import Footer from "../Components/Footer/Footer";
 import { Searchbar } from "../Components/Searchbar/Searchbar";
 import { RecentActivity } from "../Components/Recent/RecentActivity";
 export const HomePage = () => {
@@ -9,7 +9,7 @@ export const HomePage = () => {
       <Searchbar />
       <RecentActivity />
       <Slider />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
