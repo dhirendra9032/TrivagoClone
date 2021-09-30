@@ -1,0 +1,86 @@
+.Block {
+  height: 380px;
+  width: 680px;
+  border: 1px solid gray;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.loginimage {
+  height: 50px;
+  width: 100px;
+  margin-left: 280px;
+}
+
+.Blockb {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 5%;
+  /* margin: auto; */
+}
+
+.left {
+  display: grid;
+  height: 280px;
+  width: 320px;
+  border-right: 1px solid rgb(205, 208, 210);
+  grid-gap: 3%;
+}
+
+.right {
+  display: grid;
+  height: 170px;
+  width: 300px;
+  grid-gap: 3%;
+  /* border: 1px solid blue; */
+  margin-top: 70px;
+}
+
+.account {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.usetrivago {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.emailpassword {
+  font-size: 15px;
+}
+
+.email,
+.password {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.left > input {
+  height: 30px;
+  width: 300px;
+  /* margin: auto; */
+}
+
+.loginbutton {
+  background-color: rgb(0, 95, 129);
+  font-size: 15px;
+  color: white;
+  border: none;
+  height: 35px;
+  width: 230px;
+  cursor: pointer;
+  /* margin: auto; */
+}
+
+.right > button {
+  height: 35px;
+  width: 280px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  /* margin: auto; */
+}
