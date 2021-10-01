@@ -34,7 +34,9 @@ export const Routes = () => {
                 <h1>404 Not Found</h1>
             </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
+
+export default Routes

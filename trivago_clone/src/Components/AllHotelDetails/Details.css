@@ -1,0 +1,204 @@
+.b-hd-parent-container-div{
+    height: 100px;
+    width: 60%;
+    background-color: white;
+    /* border: 1px solid black; */
+    margin-left: 2%;
+    border-radius: 20px;
+    box-shadow:2px 2px 5px 3px rgb(216, 216, 216);
+}
+.b-all-headings-div{
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+}
+.b-all-headings-div span{
+    padding: 2%;
+    font-weight: 500;
+}
+.b-all-headings-div span{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px -15px rgb(204, 6, 6);
+    transition: all 300ms ease-out;
+}
+.b-all-headings-div button{
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    color: rgb(116, 116, 116);
+}
+
+
+/* overview css from here */
+
+.b-overview-parent-div{
+    height: 850px;
+    width: 150%;
+    background-color: white;
+    border: 1px solid rgb(255, 0, 0);
+    margin-left: 2%;
+}
+.b-overview-photo-div{
+    height: 200px;
+    width: 98%;
+    background-color: white;
+    /* border: 1px solid rgb(38, 0, 255); */
+    margin-left: 1%;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+.b-overview-photo-div img{
+    height: 200px;
+    width: 40%;
+    border: 1px solid rgb(0, 255, 76);
+    margin-left: 1%;
+    
+    border-radius: 10px;
+}
+.b-overview-parent-div h3{
+    text-align: left;
+    margin-left: 4%;
+}
+.b-overview-goibo-parent-div{
+    height: 200px;
+    width: 98%;
+    margin-left: 1%;
+    /* border: 1px solid brown; */
+    border-radius: 5px;
+    display: flex;
+}
+.b-overview-goibo-child-div{
+    height: 200px;
+    width: 22%;
+    margin-left: 2%;
+    border: 1px solid rgb(190, 191, 192);
+    border-radius: 5px;
+}
+.b-overview-goibo-children-div{
+    height: 100px;
+    width: 50%;
+    /* border: 1px solid gold; */
+    margin-left: 45%;
+    margin-top: 40px;
+}
+.b-overview-goibo-children-div img{
+    height: 40px;
+    width: 100%;
+    margin-top: -10px;
+}
+.b-overview-goibo-children-div p {
+    text-align: right;
+    margin-top: -20px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.b-overview-goibo-children-div h3{
+    text-align: right;
+}
+.b-lowest_price{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+.exelent-parent-div{
+    height: 150px;
+    width: 96%;
+    /* border: 1px solid green; */
+    margin-left: 2%;
+    display: flex;
+}
+.second-button{
+    height: 50px;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    margin-left: 20%;
+    margin-top: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+}
+
+.exelent-div{
+    height: 150px;
+    width: 50%;
+    /* border: 1px solid green; */
+    margin-left: 2%;
+    
+}
+.gustes-review{
+    background-color: green;
+    border-radius: 24px;
+    height: 40px;
+    width: 20%;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-left: -80%;
+}
+.execelt{
+    margin-left: -10%;
+    margin-top: -35px;
+}
+.exelent-div span{
+    margin-left: -20%;
+    
+}
+.amenities{
+    text-align: left;
+    margin-top: -1px;
+}
+.bi-bi-wifi{
+    margin-right: 30%;
+    height: 30px;
+    width: 30px;
+}
+.bi-bi-tv{
+    margin-right: 30%;
+    height: 30px;
+    width: 30px;
+}
+.bi-bi-asterisk{
+    height: 30px;
+    width: 30px;
+}
+
+
+.b-overview-parent-div-2{
+    height: 650px;
+    width: 60%;
+    background-color: white;
+    border: 1px solid rgb(255, 0, 0);
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.b-photots{
+    height: 200px;
+    width: 180px;
+    border-radius: 5px;
+    margin-left: 2%;
+    border: 1px solid tomato;
+    /* padding: 5px; */
+}
+.b-photots-1{
+    height: 200px;
+    width: 180px;
+    border-radius: 5px;
+    margin-left: 2%;
+    border: 1px solid tomato;
+    /* padding: 5px; */
+    /* margin-top: -100px; */
+}
+.b-photots-2{
+    height: 200px;
+    width: 180px;
+    border-radius: 5px;
+    margin-left: 2%;
+    border: 1px solid tomato;
+    /* padding: 5px; */
+    /* margin-top: -100px; */
+}

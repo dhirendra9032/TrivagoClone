@@ -11,15 +11,16 @@
 
 // export default App;
 
-import Navbar from "../src/Components/Navbar/Navbar";
-import { Routes } from "./Routes/Route";
+// import Navbar from "../src/Components/Navbar/Navbar";
+// import { Routes } from "./Routes/Route";
+import { HomePage } from "./Pages/HomePage";
 
 function App() {
   return (
     <div>
-      {/* <HomePage /> */}
-      <Navbar/>  
-      <Routes/>
+      <HomePage />
+      {/* <Navbar/>   */}
+      {/* <Routes/> */}
     </div>
   );   
 }
