@@ -25,30 +25,55 @@ export default function AllHotels() {
       setHotel(arr);
     });
   }, [city]);
-  // const r = (
-  //   (hotel.review.location +
-  //     hotel.review.room +
-  //     hotel.review.services +
-  //     hotel.review.facilities +
-  //     hotel.review.vom) /
-  //   5
-  // ).toFixed(1);
-  // setUpdateData(hotel);
-  console.log(city);
 
+  console.log(hotel);
+  const handleFilter = (e) => {
+    console.log(e.target.value);
+    let filterdData = [];
+    if (e.target.value === "rating") {
+      filterdData = hotel?.slice(0).sort(function (a, b) {
+        return b.review.services - a.review.services;
+      });
+    } else if (e.target.value === "distance") {
+      filterdData = hotel?.slice(0).sort(function (a, b) {
+        return a.dist - b.dist;
+      });
+    } else if (e.target.value === "price") {
+      filterdData = hotel?.sort(function (a, b) {
+        return a.price[0] - b.price[0];
+      });
+    } else if (e.target.value === "recommendation") {
+      filterdData = hotel?.sort(function (a, b) {
+        return b.star - a.star;
+      });
+    }
+    setHotel(filterdData);
+  };
   return (
     <>
       <Searchbar />
       <div className="parent-container-allhotels">
         <div className="sort-div">
           <label>Sort by</label>
-          <select name="hotels">
-            <option name="Our_recomn">Our recommendations</option>
-            <option name="Rating_recomn">Rating & recommendations</option>
-            <option name="Distance_recomn">Distance & recommendations</option>
-            <option name="Rating">Rating Only</option>
-            <option name="Price">Price Only</option>
-            <option name="Distance">Distance Only</option>
+          <select onChange={handleFilter} name="hotels">
+            <option value="recommendation" name="Our_recomn">
+              Our recommendations
+            </option>
+            <option value="rating" name="Rating_recomn">
+              Rating & recommendations
+            </option>
+            <option value="distance" name="Distance_recomn">
+              Distance & recommendations
+            </option>
+            <option value="rating" name="Rating">
+              Rating Only
+            </option>
+            <option value="price" name="Price">
+              Price Only
+            </option>
+            <option value="distance" name="Distance">
+              Distance Only
+            </option>
           </select>
         </div>
         {hotel.map((data) => (
@@ -123,7 +148,13 @@ export default function AllHotels() {
                     <h3>₹{data.price[0]}</h3>
                   </div>
                   <div className="btn">
-                    <button>View deal</button>
+                    <button
+                      onClick={(e) => {
+                        console.log(e.target);
+                      }}
+                    >
+                      View deal
+                    </button>
                   </div>
                 </div>
               </div>
