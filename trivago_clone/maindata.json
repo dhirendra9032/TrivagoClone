@@ -231,7 +231,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [3499],
       "location": "Mumbai",
       "address": "city center"
     },
@@ -313,7 +313,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [1280],
       "location": "Mumbai",
       "address": "Andheri East"
     },
@@ -399,7 +399,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [1584],
       "location": "Mumbai",
       "address": "Guru Nanak Nagar"
     },
@@ -491,7 +491,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [3636],
       "location": "Mumbai",
       "address": "Sakinaka Junction"
     },
@@ -583,7 +583,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [4536],
       "location": "Mumai",
       "address": "Sahar Airport"
     },
@@ -671,7 +671,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [1234],
       "location": "Mumbai",
       "address": "Ghatkopar"
     },
@@ -771,7 +771,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [7080],
       "location": "Mumbai",
       "address": "Juhu Tara"
     },
@@ -861,7 +861,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [5499],
       "location": "Mumbai",
       "address": "Kurla"
     },
@@ -952,7 +952,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [4480],
       "location": "Mumbai",
       "address": "Sahar Airport"
     },
@@ -1037,7 +1037,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [2480],
       "location": "Mumbai",
       "address": "city center"
     },
@@ -1135,7 +1135,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": false,
-      "price": [],
+      "price": [3580],
       "location": "Delhi",
       "address": "Aerocity"
     },
@@ -1233,7 +1233,7 @@
       "cancelation": true,
       "payProp": false,
       "breakfast": false,
-      "price": [],
+      "price": [3707],
       "location": "Delhi",
       "address": "Indira Gandhi International Airport"
     },
@@ -1316,7 +1316,7 @@
       "cancelation": true,
       "payProp": false,
       "breakfast": true,
-      "price": [],
+      "price": [2580],
       "location": "Delhi",
       "address": "Rajiv Chowk Metro Station"
     },
@@ -1414,7 +1414,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [6160],
       "location": "Delhi",
       "address": "Bangla Sahib Gurdwara"
     },
@@ -1510,7 +1510,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [5824],
       "location": "Delhi",
       "address": "India Gate"
     },
@@ -1608,7 +1608,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [3499],
       "location": "Delhi",
       "address": " Red Fort - Lal Qila"
     },
@@ -1700,7 +1700,7 @@
       "cancelation": true,
       "payProp": false,
       "breakfast": false,
-      "price": [],
+      "price": [2555],
       "location": "Delhi",
       "address": "Lodi Gardens"
     },
@@ -1783,7 +1783,7 @@
       "cancelation": true,
       "payProp": false,
       "breakfast": true,
-      "price": [],
+      "price": [2540],
       "location": "Delhi",
       "address": "Bangla Sahib Gurdwara"
     },
@@ -1881,7 +1881,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [5636],
       "location": "Delhi",
       "address": "Bangla Sahib Gurdwara"
     },
@@ -1980,7 +1980,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [16199],
       "location": "Dubai",
       "address": "Al Barsha Dubai"
     },
@@ -2078,7 +2078,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [6199],
       "location": "Dubai",
       "address": "Al Garhoud"
     },
@@ -2176,7 +2176,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [5636],
       "location": "Dubai",
       "address": "Bur Dubai"
     },
@@ -2274,7 +2274,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [5699],
       "location": "Dubai",
       "address": "Burj Khalifa"
     },
@@ -2372,7 +2372,7 @@
       "cancelation": true,
       "payProp": true,
       "breakfast": true,
-      "price": [],
+      "price": [6199],
       "location": "Delhi",
       "address": "Bangla Sahib Gurdwara"
     }

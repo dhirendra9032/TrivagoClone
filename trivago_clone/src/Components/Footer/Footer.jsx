@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import MainFooter from "./MainFooter"
 
 export default function Footer() {
   return (
@@ -161,7 +160,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <MainFooter/>
     </>
   );
 }

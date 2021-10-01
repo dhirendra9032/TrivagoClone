@@ -13,6 +13,21 @@
 
 // import Navbar from "../src/Components/Navbar/Navbar";
 // import { Routes } from "./Routes/Route";
+
+// function App() {
+//   return (
+//     <div>
+//       {/* <HomePage /> */}
+//       <Navbar/>
+//       <Routes/>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// import Navbar from "../src/Components/Navbar/Navbar";
+// import { Routes } from "./Routes/Route";
 import { HomePage } from "./Pages/HomePage";
 
 function App() {
@@ -26,3 +41,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,25 +1,30 @@
 import React from "react";
 import "./AllHotels.css";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import { Searchbar } from "../Searchbar/Searchbar";
+import { Rating, RatingView } from "react-simple-star-rating";
+import MainFooter from "../Footer/MainFooter";
 export default function AllHotels() {
-  const [hotel, setHotel] = useState([]);
   const params = useParams();
+  const [city, setCity] = useState(params.location);
+  const [hotel, setHotel] = useState([]);
+  // const [updateData, setUpdateData] = useState([]);
+  let history = useHistory();
 
   useEffect(() => {
     axios.get("http://localhost:3004/MainData").then((res) => {
       const arr = [];
       res.data.forEach((res) => {
-        if (res.location === params.location) {
+        if (res.location === city) {
           arr.push(res);
         }
       });
       setHotel(arr);
     });
-  }, []);
-
+  }, [city]);
   // const r = (
   //   (hotel.review.location +
   //     hotel.review.room +
@@ -28,98 +33,132 @@ export default function AllHotels() {
   //     hotel.review.vom) /
   //   5
   // ).toFixed(1);
-
-  console.log(hotel);
+  // setUpdateData(hotel);
+  console.log(city);
 
   return (
     <>
+      <Searchbar />
       <div className="parent-container-allhotels">
         <div className="sort-div">
-          <label>
-            Sort by -
-            <select name="hotels">
-              <option name="Our_recomn">Our recommendations</option>
-              <option name="Rating_recomn">Rating & recommendations</option>
-              <option name="Distance_recomn">Distance & recommendations</option>
-              <option name="Rating">Rating Only</option>
-              <option name="Price">Price Only</option>
-              <option name="Distance">Distance Only</option>
-            </select>
-          </label>
+          <label>Sort by</label>
+          <select name="hotels">
+            <option name="Our_recomn">Our recommendations</option>
+            <option name="Rating_recomn">Rating & recommendations</option>
+            <option name="Distance_recomn">Distance & recommendations</option>
+            <option name="Rating">Rating Only</option>
+            <option name="Price">Price Only</option>
+            <option name="Distance">Distance Only</option>
+          </select>
         </div>
         {hotel.map((data) => (
-          <div className="hotel-info-div">
+          <div key={data.name} className="hotel-info-div">
             <img src={data.img[0]} alt="img-hotel" />
 
-            <div className="about-hotel">
-              <h3>{data.name}</h3>
-              <div className="rat-div">
-                <p>🧑🧑👨👨</p>
-                <p>Hotel</p>
+            <div className="about-hotel1">
+              <div className="h3">
+                <h3>{data.name}</h3>
               </div>
-              <div className="popular-choice">
-                <p>🧑🧑</p>
-                <p>Popular Choice</p>
+              <div className="rat-div">
+                <RatingView ratingValue={data.star} />
+                <span className="pspan">
+                  <p>Hotel</p>
+                </span>
               </div>
               <hr></hr>
               <div className="location">
                 <label>
                   ⨀ {data.dist} km to {data.address}
-                  <select name="hotels" className="hotels"></select>
+                  <div className="arrow">
+                    <img src="/down-arrow.png" alt="arrow" />
+                  </div>
                 </label>
               </div>
               <hr></hr>
               <div className="rating">
-                <label>
-                  <Grn>
-                    {(
-                      (data.review.room +
-                        data.review.location +
-                        data.review.services +
-                        data.review.facilities +
-                        data.review.vom) /
-                      5
-                    ).toFixed(1)}
-                  </Grn>
-                  <b>
-                    {(
-                      (data.review.room +
-                        data.review.location +
-                        data.review.services +
-                        data.review.facilities +
-                        data.review.vom) /
-                      5
-                    ).toFixed(1) < 8.5
-                      ? "Good"
-                      : "Excellent"}
-                  </b>
-                  ({data.reviewNum})
-                  <select name="hotels" className="hotels"></select>
-                </label>
+                <Grn>
+                  {(
+                    (data.review.room +
+                      data.review.location +
+                      data.review.services +
+                      data.review.facilities +
+                      data.review.vom) /
+                    5
+                  ).toFixed(1)}
+                </Grn>
+                <div className="revwrap">
+                  <div className="rev">
+                    <b>
+                      {(
+                        (data.review.room +
+                          data.review.location +
+                          data.review.services +
+                          data.review.facilities +
+                          data.review.vom) /
+                        5
+                      ).toFixed(1) < 8.5
+                        ? "Good"
+                        : "Excellent"}
+                    </b>
+                  </div>
+                  <div className="rnum">({data.reviewNum})</div>
+                </div>
+
+                <div className="arrow2">
+                  <img src="/down-arrow.png" alt="arrow" />
+                </div>
               </div>
             </div>
             <div className="about-hotel">
               <div className="view-detail-div">
-                <h4>Booking.com</h4>
-                <h3>5,040</h3>
-                <div className="view-detail">
-                  <h5>View Deal </h5>
+                <div className="redi">
+                  <p>{data.redirect}</p>
+                </div>
+                <div className="fact">
+                  <div>{data.cancelation && <p> | Free Cancelation </p>}</div>
+                  <div>{data.breakfast && <p> | Free BreakFast</p>}</div>
+                </div>
+                <div className="deal">
+                  <div className="h3p">
+                    <h3>₹{data.price[0]}</h3>
+                  </div>
+                  <div className="btn">
+                    <button>View deal</button>
+                  </div>
                 </div>
               </div>
               <div className="agoda-price">
                 <div className="agoda-price-div1">
-                  <p>Hotels.com</p>
-                  <h5>2,576</h5>
+                  <div className="hot">
+                    <p>Hotels.com</p>
+                  </div>
+                  <div className="hotp">
+                    <p>₹{data.deals[4]}</p>
+                  </div>
                 </div>
                 <div className="agoda-price-div2">
-                  <p>Our lowest price</p>
-                  <h5>2,318 booking</h5>
+                  <div className="hotlow">
+                    <p>Our lowest price</p>
+                  </div>
+                  <div className="hotlowp">
+                    <p>
+                      ₹
+                      {
+                        (data.deals.sort(function (a, b) {
+                          return a - b;
+                        }),
+                        data.deals[0])
+                      }
+                      booking
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+      <MainFooter />
     </>
   );
 }
@@ -128,5 +167,7 @@ const Grn = styled.div`
   background-color: rgb(0, 95, 0);
   width: 40px;
   color: white;
+  height: 20px;
+  margin-left: 10px;
   border-radius: 5px;
 `;
