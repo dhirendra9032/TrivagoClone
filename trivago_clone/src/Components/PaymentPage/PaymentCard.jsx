@@ -5,14 +5,14 @@ import GooglePayButton from "@google-pay/button-react";
 const PaymentCard = () => {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      {/* <nav className="navbar navbar-light bg-light">
         <div>
           <img
             src="http://www.tnhglobal.com/wp-content/uploads/2018/08/goibibo.png"
             alt="agoda"
           />
         </div>
-      </nav>
+      </nav> */}
 
       <div className="container">
         <div style={{ width: "50%" }}>
@@ -30,7 +30,7 @@ const PaymentCard = () => {
                   We will use this details to share your booking information
                 </h5>
               </div>
-              {/* <form className="form-input-holder">
+              <form className="form-input-holder">
                 <div>
                   <input type="text" placeholder="Full Name" />
                   <input type="text" placeholder="Email" />
@@ -39,7 +39,7 @@ const PaymentCard = () => {
                   <input type="text" placeholder="Mobile No" />
                   <input className="inputbox-4" type="submit" value="Proceed" />
                 </div>
-              </form> */}
+              </form>
               <GooglePayButton
                 environment="TEST"
                 paymentRequest={{
@@ -84,7 +84,7 @@ const PaymentCard = () => {
                 }}
                 existingPaymentMethodRequired="false"
                 buttonColor="black"
-                buttonType="buy"
+                buttonType="book"
                 buttonSizeMode="fill"
               />
             </div>

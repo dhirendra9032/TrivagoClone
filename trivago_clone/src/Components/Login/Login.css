@@ -1,39 +1,48 @@
 .Block {
   height: 380px;
-  width: 680px;
-  border: 1px solid gray;
-  display: grid;
+  width: 45%;
+  /* border: 1px solid gray; */
+  /* display: grid; */
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.Logoimage {
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
 }
 
 .loginimage {
-  height: 50px;
-  width: 100px;
-  margin-left: 280px;
+  height: 70px;
+  width: 20%;
+  margin: auto;
+  /* border: 1px solid red; */
 }
 
 .Blockb {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-gap: 5%;
+  grid-gap: 3%;
   /* margin: auto; */
 }
 
 .left {
   display: grid;
   height: 280px;
-  width: 320px;
-  border-right: 1px solid rgb(205, 208, 210);
+  width: 100%;
+  max-width: 100%;
+  /* border: 1px solid red; */
   grid-gap: 3%;
 }
 
 .right {
   display: grid;
-  height: 170px;
-  width: 300px;
+  height: 200px;
+  width: 90%;
+  max-width: 100%;
   grid-gap: 3%;
   /* border: 1px solid blue; */
   margin-top: 70px;
@@ -42,6 +51,8 @@
 .account {
   font-size: 20px;
   font-weight: 600;
+  width: 90%;
+  /* border: 1px solid blue; */
 }
 
 .usetrivago {
@@ -51,40 +62,67 @@
 
 .emailpassword {
   font-size: 15px;
+  width: 90%;
+  text-align: center;
+  /* border: 1px solid red; */
 }
 
 .email,
 .password {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
+  text-align: left;
 }
 
 .left > input {
   height: 30px;
-  width: 300px;
+  width: 80%;
   /* margin: auto; */
 }
 
 .loginbutton {
   background-color: rgb(0, 95, 129);
   font-size: 15px;
+  /* border: 1px solid red; */
   color: white;
-  border: none;
-  height: 35px;
-  width: 230px;
+  /* border: none; */
+  height: 50px;
+  width: 100%;
   cursor: pointer;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .right > button {
-  height: 35px;
+  height: 60px;
   width: 280px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 600;
   background-color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   cursor: pointer;
   /* margin: auto; */
 }
 
 .create > h1 {
   margin-left: 100px;
+}
+
+.clogo div > img {
+  width: 100%;
+}
+.clogo div {
+  /* border: 1px solid red; */
+  width: 25px;
+}
+/* .la {
+  border: 1px solid red;
+  width: 80%;
+} */
+.sign {
+  width: 15%;
+  height: 40px;
+  border: none;
+  background-color: rgb(0, 95, 129);
+  color: white;
 }

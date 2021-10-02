@@ -75,7 +75,7 @@ const Searchbar = () => {
                 </div>
                 <div className="inp-holder-3">
                   <div className="icon">
-                    <img src="./users.png" alt="map-pointer" />
+                    <img src="./users.png" alt="" />
                   </div>
                   <div className="add-on">
                     <div>1 room</div>
