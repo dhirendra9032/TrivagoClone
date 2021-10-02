@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { Searchbar } from "../Searchbar/Searchbar";
 import { Rating, RatingView } from "react-simple-star-rating";
 import MainFooter from "../Footer/MainFooter";
+import { Link } from "react-router-dom";
 
 export default function AllHotels() {
   const params = useParams();
@@ -149,13 +150,15 @@ export default function AllHotels() {
                     <h3>₹{data.price[0]}</h3>
                   </div>
                   <div className="btn">
-                    <button
-                      onClick={(e) => {
-                        console.log(e.target);
-                      }}
-                    >
-                      View deal
-                    </button>
+                    <Link to="/payment">
+                      <button
+                        onClick={(e) => {
+                          console.log(e.target);
+                        }}
+                      >
+                        View deal
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

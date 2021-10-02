@@ -4,7 +4,7 @@ import SliderStyle from "./SliderStyle";
 import styled from "styled-components";
 
 const Wrap = styled.div`
-  .container {
+  .containero {
     width: 80%;
     margin: auto;
   }
@@ -182,7 +182,7 @@ export const Slider = () => {
           <button onClick={handleChange1}>Top Cities</button>
           <button onClick={handleChange2}>Top Destinations</button>
         </div>
-        <div className="container">
+        <div className="containero">
           <div className="line3"></div>
           <Carousel
             className="caro"

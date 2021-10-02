@@ -6,6 +6,7 @@ import Login from "../Components/Login/Login";
 import LandingPage from "../Components/LandingPage/LandingPage";
 import Signup from "../Components/Signup/Signup";
 import Navbar from "../Components/Navbar/Navbar";
+import PaymentCard from "../Components/PaymentPage/PaymentCard";
 // import Footer from "../Components/Footer/Footer";
 export const Routes = () => {
   return (
@@ -25,8 +26,8 @@ export const Routes = () => {
         <Route exact path="/signup">
           <Signup />
         </Route>
-        <Route exact path="/">
-          <LandingPage />
+        <Route path="/payment">
+          <PaymentCard />
         </Route>
         <Route>
           <h1>404 Not Found</h1>

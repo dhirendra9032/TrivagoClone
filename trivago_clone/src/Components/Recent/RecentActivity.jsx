@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 const Div = styled.div`
   width: 70%;
+  max-width: 70%;
   /* border: 1px solid red; */
   margin: auto;
   .wrap {
-    width: 80%;
+    width: 90%;
+    max-width: 90%;
     /* border: 1px solid red; */
     margin: auto;
     display: flex;
@@ -17,11 +19,12 @@ const Div = styled.div`
   }
   .date {
     /* border: 1px solid red; */
+    max-width: 50%;
     width: 50%;
     text-align: left;
   }
   .date img {
-    width: 15px;
+    max-width: 15px;
     margin-right: 5px;
   }
   .stay {
@@ -36,7 +39,7 @@ const Div = styled.div`
     /* display: flex;
     flex-direction: column; */
     /* border: 1px solid red; */
-    width: 60%;
+    max-width: 60%;
     padding: 5px;
     /* background-color: lightgray; */
   }
@@ -68,9 +71,10 @@ const Div = styled.div`
     font-weight: 500;
   }
 
-  .container {
+  .containere {
     /* border: 1px solid red; */
     width: 50%;
+    max-width: 50%;
     height: 130px;
     margin-bottom: 5%;
     margin-left: 1%;
@@ -78,6 +82,7 @@ const Div = styled.div`
   .sbtn {
     /* border: 1px solid red; */
     width: 30%;
+    max-width: 30%;
     height: 50px;
     margin-top: 30px;
     padding-top: 5px;
@@ -88,12 +93,13 @@ const Div = styled.div`
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
   }
   .line2 {
     width: 1.5px;
-    height: 130px;
+    height: 120px;
+    margin-top: -2%;
     border-bottom: none;
     border-top: none;
     background: linear-gradient(to top, #e9e8e8, #a7a5a5, #f0eeee);
@@ -101,7 +107,7 @@ const Div = styled.div`
   .dot {
     width: 8px;
     height: 8px;
-    margin-top: 10px;
+    margin-top: 20px;
     /* border: 1px solid red; */
     border-radius: 100px;
     background-color: #202020;
@@ -130,7 +136,7 @@ export const RecentActivity = () => {
             <div className="line2">
               <div className="dot"></div>
             </div>
-            <div className="container">
+            <div className="containere">
               <div className="date">
                 <span>
                   <img src="./time.png" alt="" />
