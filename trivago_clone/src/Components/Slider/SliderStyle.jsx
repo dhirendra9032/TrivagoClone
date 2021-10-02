@@ -15,10 +15,11 @@ export default styled.div`
     width: 100%;
   }
   .detail {
-    width: 90%;
+    width: 100%;
     margin: auto;
     /* border: 1px solid red; */
     /* height: 250px; */
+    font-size: 1vw;
     text-align: left;
   }
   .detail span {

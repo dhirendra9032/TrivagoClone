@@ -5,18 +5,18 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
   .container {
-    width: 65%;
+    width: 80%;
     margin: auto;
   }
   .line3 {
-    width: 85%;
+    width: 88%;
     height: 1px;
     background-color: lightgrey;
     margin: auto;
   }
   .chngBtn {
     width: 55%;
-    margin: auto;
+    margin-left: 15%;
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
@@ -68,7 +68,7 @@ const breakPoints = [
   },
   {
     width: 768,
-    itemsToShow: 3,
+    itemsToShow: 4,
   },
   {
     width: 1200,

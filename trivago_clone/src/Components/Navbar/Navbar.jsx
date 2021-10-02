@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom"
-import { AuthContext } from "../../Contexts/AuthContext"
-import './Navbar.css';
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../Contexts/AuthContext";
+import "./Navbar.css";
 
 export default function Navbar() {
   const { token, user, logoutUser } = useContext(AuthContext);
@@ -33,6 +33,26 @@ export default function Navbar() {
 
   return (
     <div className="Navbar">
+      <div
+        style={{
+          width: "10%",
+          marginleft: "10%",
+          padding: "0",
+        }}
+      >
+        <Link to="/">
+          <img
+            style={{
+              width: "80%",
+              height: "40px",
+              verticalAlign: "textTop",
+              marginTop: "0",
+            }}
+            src="./triLogo.png"
+            alt=""
+          />
+        </Link>
+      </div>
       <div className="first">
         <Link to="/">
           {" "}
