@@ -62,7 +62,9 @@ export default function Footer() {
       </div>
       <div className="main-container-2">
         <div className="main-container-2--div">
-          <h3>More Top Cities</h3>
+          <div className="main-container-h3">
+            <h3>More Top Cities</h3>
+          </div>
           <div className="cities">
             <div className="cities-1">
               <p>Chennai</p>
@@ -111,7 +113,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="main-container-2--div">
-          <h3>trivago International</h3>
+          <div className="main-container-h3">
+            <h3>trivago International</h3>
+          </div>
           <div className="cities">
             <div className="cities-1">
               <p>trivago العالم العربي</p>

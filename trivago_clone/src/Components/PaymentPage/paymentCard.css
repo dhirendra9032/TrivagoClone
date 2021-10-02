@@ -1,0 +1,225 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding :5px 0px 0px 20px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(129, 100, 100, 0.3);
+}
+.navbar img{
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+}
+.container{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.form-container{
+   width:100%;
+   height: 350px;
+   margin-bottom: 60px;
+   box-shadow: 2px 5px 10px rgba(129, 100, 100, 0.3);
+
+}
+
+.head{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #F2F3F4 ;
+}
+.head button{
+    width: 25px;
+    height: 25px;
+    margin: 0px 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: #17202A;
+}
+.form-data{
+    margin: 40px;
+    text-align: left;
+}
+.form-input-holder{
+    padding-top: 20px;
+}
+.form-input-holder div{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 250px;
+    height: 30px;
+    outline: 0;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgb(22, 22, 22)
+}
+.lable{
+    float: left;
+    display: flex;
+    left: 0;
+    top: 0;
+}
+.inputbox-4{
+    width: 250px;
+    height: 50px;
+    outline: 0;
+    border: #fff !important;
+    margin-right: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ff3c5c   ;
+    border-radius: 5px;
+    border:1px solid rgb(22, 22, 22)
+}
+.inputbox-5 {
+    width: 250px;
+    height: 30px;
+    outline: 0;
+    border: #fff !important;
+    margin-right: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    background: #346aff   ;
+    border-radius: 5px;
+    border:1px solid rgb(22, 22, 22)
+}
+.hotel-detail{
+    width: 50%;
+
+}
+.detail-box{
+    width:400px;
+   height: 500px;
+   padding: 20px;
+   text-align: left;
+   box-shadow: 2px 5px 10px rgba(129, 100, 100, 0.3);
+}
+
+.box-1{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+   
+
+}
+.box-1 div{
+    width: 50%;
+}
+.box-1 button{
+    width: 40px;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(11, 71, 11);
+}
+
+
+.ratingBox{
+   width: 70%;
+   height: 200px;
+   padding: 40px;
+
+}
+.breakline{
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.price-box{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.ratingBox div {
+    height: 15px;
+    margin: 0 0 20px 0;
+    text-align: left;
+
+    
+}
+.progress {
+   
+    width:90%;
+    height:5px;
+    background:#ececec;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  
+  .rating-5{
+    display: flex;
+    height: 10px;
+    justify-content: space-between;
+  }
+  .bar-1{
+      width: 70%;
+      background: rgb(248, 185, 11);
+      border-radius: 50px;
+  }
+  .bar-2{
+    width: 20%;
+    background: rgb(9, 73, 38);
+    border-radius: 50px;
+}
+.bar-3{
+    width: 40%;
+    background: rgb(245, 11, 62);
+    border-radius: 50px;
+}
+.bar-4{
+    width: 55%;
+    background: rgb(42, 32, 98);
+    border-radius: 50px;
+}
+.bar-5{
+    width: 15%;
+    background: rgb(85, 230, 162);
+    border-radius: 50px;
+}
+
+.final-box{
+    background: rgb(184, 147, 182);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #fa022c;
+    justify-content: center;
+    border-radius: 10px;
+}
+.pos{
+    position: relative;
+
+}
+
+/*.overflow{
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    left: 250px;
+    padding: 30px;
+    
+  
+
+    
+}*/
+
+  
