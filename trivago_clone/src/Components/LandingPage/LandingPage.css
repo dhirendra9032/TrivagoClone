@@ -1,43 +1,49 @@
-
-.Matter
-{
-    display: flex;
-    height: 100px;
-    width: 950px;
-    /* border: 1px solid black; */
-    margin-left: 130px;
-    margin-top: 50px;
+.Matter {
+  display: flex;
+  height: 100px;
+  width: 80%;
+  max-width: 70%;
+  /* border: 1px solid black; */
+  margin: 50px auto;
 }
 
-.Logo
-{
-    height: 100px;
-    width: 250px;
-    /* border: 2px solid blue; */
-    border-right: 1px solid rgb(235,236,237);
+.Logo {
+  /* border-right: 1px solid rgb(235, 236, 237); */
+  width: 20%;
+  /* border: 1px solid black; */
 }
 
-.trivago
-{
-    height: 200px;
-    width: 180px;
-    /* border:1px solid black; */
-    margin-top: -50px;
+.trivago {
+  height: 60px;
+  width: 80%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
 }
 
-.Deals > div
-{
-    font-size: 14px;
-    margin-right: 160px;
+.l {
+  width: 1px;
+  height: 80px;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.Deals {
+  /* border: 1px solid red; */
+}
+.Deals > div {
+  font-size: 14px;
+  /* margin-right: 160px; */
+  text-align: left;
 }
 
-.Deals > h2
-{
-    margin-left: 10px;
-    font-size: 20px;
+.Deals > h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  word-spacing: 2px;
+  text-align: left;
 }
 
-a:hover, select:hover
-{
-    background-color: rgb(235,236,237);
+a:hover,
+select:hover {
+  background-color: rgb(235, 236, 237);
 }

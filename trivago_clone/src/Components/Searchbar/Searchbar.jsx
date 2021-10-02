@@ -3,6 +3,7 @@ import "./Searchbar.css";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Searchbar = () => {
   const [searchText, setsearchText] = useState("");
@@ -53,7 +54,7 @@ const Searchbar = () => {
                   </div>
                   <div className="datepicker-holder">
                     <div className="datepicker-1">
-                      <div>Check In</div>
+                      <div className="ci">Check In</div>
                       <div>
                         <DatePicker
                           selected={checkInDate}
@@ -62,7 +63,7 @@ const Searchbar = () => {
                       </div>
                     </div>
                     <div className="datepicker-2">
-                      <div>Check Out</div>
+                      <div className="co">Check Out</div>
                       <div>
                         <DatePicker
                           selected={checkOutDate}
@@ -74,10 +75,7 @@ const Searchbar = () => {
                 </div>
                 <div className="inp-holder-3">
                   <div className="icon">
-                    <img
-                      src="https://img-premium.flaticon.com/png/512/1358/premium/1358015.png?token=exp=1632859619~hmac=5c758bc5343a05f6e24a1d83d018802c"
-                      alt="map-pointer"
-                    />
+                    <img src="./users.png" alt="map-pointer" />
                   </div>
                   <div className="add-on">
                     <div>1 room</div>

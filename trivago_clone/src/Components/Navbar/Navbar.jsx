@@ -34,6 +34,7 @@ export default function Navbar() {
   return (
     <div className="Navbar">
       <div
+        className="lo"
         style={{
           width: "10%",
           marginleft: "10%",

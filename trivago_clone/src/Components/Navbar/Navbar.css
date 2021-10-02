@@ -70,10 +70,16 @@
   text-decoration: none;
   text-decoration-thickness: initial;
 } */
+.lo:hover {
+  background-color: white;
+}
 
 .logo1 {
   height: 200px;
   width: 200px;
+}
+.first a:hover {
+  border-bottom: 1px solid #007cc2;
 }
 
 .secondlogin > select:hover {
