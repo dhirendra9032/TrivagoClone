@@ -1,18 +1,19 @@
 import React from "react";
 import "./AllHotels.css";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Searchbar } from "../Searchbar/Searchbar";
 import { Rating, RatingView } from "react-simple-star-rating";
 import MainFooter from "../Footer/MainFooter";
+
 export default function AllHotels() {
   const params = useParams();
   const [city, setCity] = useState(params.location);
   const [hotel, setHotel] = useState([]);
   // const [updateData, setUpdateData] = useState([]);
-  let history = useHistory();
+  // let history = useHistory();
 
   useEffect(() => {
     axios.get("http://localhost:3004/MainData").then((res) => {

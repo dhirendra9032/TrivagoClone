@@ -6,7 +6,7 @@ import Login from "../Components/Login/Login";
 import LandingPage from "../Components/LandingPage/LandingPage";
 import Signup from "../Components/Signup/Signup";
 import Navbar from "../Components/Navbar/Navbar";
-
+// import Footer from "../Components/Footer/Footer";
 export const Routes = () => {
   return (
     <div>
@@ -37,4 +37,4 @@ export const Routes = () => {
   );
 };
 
-export default Routes
+export default Routes;
