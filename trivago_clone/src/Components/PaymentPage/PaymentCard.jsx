@@ -204,6 +204,7 @@ const PaymentCard = () => {
                 <h5>25% coopan discount</h5>
               </div>
               <div style={{ textAlign: "right" }}>
+                ₹
                 {
                   (hot.deals?.sort(function (a, b) {
                     return a - b;

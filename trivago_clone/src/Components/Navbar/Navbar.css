@@ -121,7 +121,7 @@
 .dropdown > a {
   height: 50px;
   width: 100px;
-  color: #0a1121;
+  color: white;
   font-size: 12px;
   font-family: "proxima_vara", Arial, Helvetica, Sans, Sans-Serif, "Sans Serif";
   font-variant-numeric: proportional-nums;
@@ -130,10 +130,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: inline-flex;
-  scroll-snap-align: end;
+  /* display: inline-flex; */
+  /* scroll-snap-align: end; */
   text-decoration: none;
   text-decoration-thickness: initial;
+}
+
+.dropbtn {
+  /* background-color: white !important; */
+  color: #0a1121;
 }
 
 .login {
@@ -190,7 +195,7 @@
 }
 
 .dropdown-content1 a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
