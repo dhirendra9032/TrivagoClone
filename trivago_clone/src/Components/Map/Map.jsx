@@ -18,12 +18,12 @@ export default function Map({ hotel }) {
     height: 600,
     latitude: hotel.map[0],
     longitude: hotel.map[1],
-    zoom: 0,
+    zoom: 1,
   });
   const [del, setdel] = useState(null);
   //console.log(port.latitude, port.longitude, "Loats");
   return (
-    <div>
+    <div style={{ marginTop: "50px" }}>
       <ReactMapGl
         {...port}
         mapboxApiAccessToken="pk.eyJ1IjoiYWtzaGF5a3VtYXIyNCIsImEiOiJja3N1aGFhOTMxZzZqMnF0ZmZ1eDRmNXJmIn0.ylSBEBM4k84BqHw-Hl1lOQ"
@@ -82,7 +82,7 @@ export default function Map({ hotel }) {
 const Show = styled.div`
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+
   * {
     font-size: 14px;
     padding: 8px 0;
