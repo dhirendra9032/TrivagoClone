@@ -1,5 +1,12 @@
+.allhotelwrap {
+  width: 100%;
+  /* border: 1px solid blue; */
+  background-color: #ebeced;
+}
+
 .parent-container-allhotels {
   height: auto;
+  width: 60%;
   max-width: 60%;
   /* border: 1px solid blue; */
   background-color: #ebeced;
@@ -268,4 +275,7 @@
   margin-top: 0px;
   font-weight: bold;
   font-size: 1vw;
+}
+.allhotelwrap {
+  display: flex;
 }

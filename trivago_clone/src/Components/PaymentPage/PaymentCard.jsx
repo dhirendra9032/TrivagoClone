@@ -1,8 +1,18 @@
 import React from "react";
 import "./paymentCard.css";
 import GooglePayButton from "@google-pay/button-react";
+import { useHistory } from "react-router-dom";
+import { useState } from "react";
 
 const PaymentCard = () => {
+  const [state, setstate] = useState(false);
+  const history = useHistory();
+  if (state) {
+    alert("Payment done.");
+    setTimeout(() => {
+      history.push("/");
+    }, 1000);
+  }
   return (
     <div>
       {/* <nav className="navbar navbar-light bg-light">
@@ -80,6 +90,7 @@ const PaymentCard = () => {
                 }}
                 onPaymentAuthorized={(paymentData) => {
                   console.log("Payment Authorized Success", paymentData);
+                  setstate(true);
                   return { transactionState: "SUCCESS" };
                 }}
                 existingPaymentMethodRequired="false"
