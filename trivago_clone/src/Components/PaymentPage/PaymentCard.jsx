@@ -10,19 +10,21 @@ const PaymentCard = () => {
   const [state, setstate] = useState(false);
   const history = useHistory();
   const [hot, setHot] = useState([]);
-  const params = useParams();
-  console.log(params);
-
+  // const[img,setImg]=useState(hot)
+  const { id } = useParams();
+  // console.log(id);
   useEffect(() => {
-    axios.get("http://localhost:3004/MainData").then((res) => {
-      res.data.forEach((r) => {
-        if (r.name === params.hotel) {
-          setHot(r);
-        }
-      });
+    axios.get(`http://localhost:3004/MainData/${id}`).then((res) => {
+      // const arr = [];
+      // res.data.forEach((r) => {
+      //   if (r.id === id) {
+      //     arr.push(r);
+      //   }
+      // });
+
+      setHot(res.data);
     });
   }, []);
-
   console.log(hot);
 
   if (state) {
@@ -32,24 +34,8 @@ const PaymentCard = () => {
     }, 1000);
   }
 
-  const x = hot.deals.sort(function (a, b) {
-    return a - b;
-  });
-
-  const y = Math.floor(x[0] - (x[0] * 25) / 100);
-  console.log(y);
-
   return (
     <div>
-      {/* <nav className="navbar navbar-light bg-light">
-        <div>
-          <img
-            src="http://www.tnhglobal.com/wp-content/uploads/2018/08/goibibo.png"
-            alt="agoda"
-          />
-        </div>
-      </nav> */}
-
       <div className="container">
         <div style={{ width: "50%" }}>
           <div className="form-container">
@@ -104,9 +90,9 @@ const PaymentCard = () => {
                   transactionInfo: {
                     totalPriceStatus: "FINAL",
                     totalPriceLabel: "Total",
-                    totalPrice: y,
-                    currencyCode: "USD",
-                    countryCode: "US",
+                    totalPrice: `${hot.price}`,
+                    currencyCode: "INR",
+                    countryCode: "IN",
                   },
                   //   shippingAddressRequired: true,
                   callbackIntents: ["PAYMENT_AUTHORIZATION"],
@@ -167,13 +153,13 @@ const PaymentCard = () => {
             <div className="box-1">
               <div>
                 <div style={{ width: "100%" }}>
-                  <h5>{hot.name}</h5>
+                  <h5>{hot?.name}</h5>
                 </div>
                 <button>4.0</button>
               </div>
               <div>
                 <img
-                  src={hot.img[0]}
+                  src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/83/20/8320038_v4.jpeg"
                   alt="img"
                   style={{ width: "200px", height: "150px" }}
                 />
@@ -196,28 +182,27 @@ const PaymentCard = () => {
               <div style={{ textAlign: "left" }}>
                 <h5>Price Drop</h5>
               </div>
-              <div style={{ textAlign: "right" }}>
-                ₹
-                {
-                  (hot.deals.sort(function (a, b) {
-                    return a - b;
-                  }),
-                  hot.deals[0])
-                }
-              </div>
+              {/* <div style={{ textAlign: "right" }}>
+                  ₹
+                  {
+                    (hot?.deals.sort(function (a, b) {
+                      return a - b;
+                    }),
+                    hot?.deals[0])
+                  }
+                </div> */}
             </div>
             <div className="box-1">
               <div style={{ textAlign: "left" }}>
                 <h5>25% coopan discount</h5>
               </div>
               <div style={{ textAlign: "right" }}>
-                ₹
-                {
-                  (hot.deals.sort(function (a, b) {
-                    return a - b;
-                  }),
-                  Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
-                }
+                {/* {
+                    (hot?.deals.sort(function (a, b) {
+                      return a - b;
+                    }),
+                    Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
+                  } */}
               </div>
             </div>
             <div className="breakline"></div>
@@ -227,13 +212,12 @@ const PaymentCard = () => {
               </div>
               <div style={{ textAlign: "right" }}>
                 {" "}
-                ₹
-                {
-                  (hot.deals.sort(function (a, b) {
+                {/* {
+                  (hot?.deals.sort(function (a, b) {
                     return a - b;
                   }),
                   Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
-                }
+                } */}
               </div>
             </div>
             <div className="box-1 final-box">
@@ -245,5 +229,4 @@ const PaymentCard = () => {
     </div>
   );
 };
-
 export default PaymentCard;

@@ -80,7 +80,7 @@ export default function AllHotels() {
             </select>
           </div>
           {hotel.map((data) => (
-            <div key={data.name} className="hotel-info-div">
+            <div key={data.id} className="hotel-info-div">
               <img src={data.img[0]} alt="img-hotel" />
 
               <div className="about-hotel1">
@@ -151,7 +151,7 @@ export default function AllHotels() {
                       <h3>₹{data.price[0]}</h3>
                     </div>
                     <div className="btn">
-                      <Link to={`/payment/${data.name}`}>
+                      <Link to={`/payment/${data.id}`}>
                         <button
                           onClick={(e) => {
                             console.log(e.target);
