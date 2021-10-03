@@ -26,7 +26,7 @@ export const Routes = () => {
         <Route exact path="/signup">
           <Signup />
         </Route>
-        <Route path="/payment">
+        <Route path="/payment/:hotel">
           <PaymentCard />
         </Route>
         <Route>

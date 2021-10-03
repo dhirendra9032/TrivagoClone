@@ -5,7 +5,7 @@ import axios from "axios";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Searchbar } from "../Searchbar/Searchbar";
-import { Rating, RatingView } from "react-simple-star-rating";
+import { RatingView } from "react-simple-star-rating";
 import MainFooter from "../Footer/MainFooter";
 import { Link } from "react-router-dom";
 import Map from "../Map/Map";
@@ -151,7 +151,7 @@ export default function AllHotels() {
                       <h3>₹{data.price[0]}</h3>
                     </div>
                     <div className="btn">
-                      <Link to="/payment">
+                      <Link to={`/payment/${data.name}`}>
                         <button
                           onClick={(e) => {
                             console.log(e.target);

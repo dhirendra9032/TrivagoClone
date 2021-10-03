@@ -2,17 +2,43 @@ import React from "react";
 import "./paymentCard.css";
 import GooglePayButton from "@google-pay/button-react";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const PaymentCard = () => {
   const [state, setstate] = useState(false);
   const history = useHistory();
+  const [hot, setHot] = useState([]);
+  const params = useParams();
+  console.log(params);
+
+  useEffect(() => {
+    axios.get("http://localhost:3004/MainData").then((res) => {
+      res.data.forEach((r) => {
+        if (r.name === params.hotel) {
+          setHot(r);
+        }
+      });
+    });
+  }, []);
+
+  console.log(hot);
+
   if (state) {
     alert("Payment done.");
     setTimeout(() => {
       history.push("/");
     }, 1000);
   }
+
+  const x = hot.deals.sort(function (a, b) {
+    return a - b;
+  });
+
+  const y = Math.floor(x[0] - (x[0] * 25) / 100);
+  console.log(y);
+
   return (
     <div>
       {/* <nav className="navbar navbar-light bg-light">
@@ -78,7 +104,7 @@ const PaymentCard = () => {
                   transactionInfo: {
                     totalPriceStatus: "FINAL",
                     totalPriceLabel: "Total",
-                    totalPrice: "1",
+                    totalPrice: y,
                     currencyCode: "USD",
                     countryCode: "US",
                   },
@@ -141,13 +167,13 @@ const PaymentCard = () => {
             <div className="box-1">
               <div>
                 <div style={{ width: "100%" }}>
-                  <h5>Hotel Name Lorem ipsum .</h5>
+                  <h5>{hot.name}</h5>
                 </div>
                 <button>4.0</button>
               </div>
               <div>
                 <img
-                  src="https://images.oyoroomscdn.com/uploads/hotel_image/37/thumb/c7702d8af149b9f8.jpg"
+                  src={hot.img[0]}
                   alt="img"
                   style={{ width: "200px", height: "150px" }}
                 />
@@ -164,26 +190,51 @@ const PaymentCard = () => {
               <div style={{ textAlign: "left" }}>
                 <h5>Room Price for 1 x gest</h5>
               </div>
-              <div style={{ textAlign: "right" }}>$1646</div>
+              <div style={{ textAlign: "right" }}>₹{hot.price}</div>
             </div>
             <div className="box-1">
               <div style={{ textAlign: "left" }}>
                 <h5>Price Drop</h5>
               </div>
-              <div style={{ textAlign: "right" }}>$646</div>
+              <div style={{ textAlign: "right" }}>
+                ₹
+                {
+                  (hot.deals.sort(function (a, b) {
+                    return a - b;
+                  }),
+                  hot.deals[0])
+                }
+              </div>
             </div>
             <div className="box-1">
               <div style={{ textAlign: "left" }}>
                 <h5>25% coopan discount</h5>
               </div>
-              <div style={{ textAlign: "right" }}>$1646</div>
+              <div style={{ textAlign: "right" }}>
+                ₹
+                {
+                  (hot.deals.sort(function (a, b) {
+                    return a - b;
+                  }),
+                  Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
+                }
+              </div>
             </div>
             <div className="breakline"></div>
             <div className="box-1">
               <div style={{ textAlign: "left" }}>
                 <h5>Payble amount inclusive of all taxes</h5>
               </div>
-              <div style={{ textAlign: "right" }}>$1646</div>
+              <div style={{ textAlign: "right" }}>
+                {" "}
+                ₹
+                {
+                  (hot.deals.sort(function (a, b) {
+                    return a - b;
+                  }),
+                  Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
+                }
+              </div>
             </div>
             <div className="box-1 final-box">
               16 People booked this hotel today
