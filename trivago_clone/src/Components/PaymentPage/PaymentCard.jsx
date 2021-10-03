@@ -9,7 +9,7 @@ import axios from "axios";
 const PaymentCard = () => {
   const [state, setstate] = useState(false);
   const history = useHistory();
-  const [hot, setHot] = useState([]);
+  const [hot, setHot] = useState({});
   // const[img,setImg]=useState(hot)
   const { id } = useParams();
   // console.log(id);
@@ -26,14 +26,21 @@ const PaymentCard = () => {
     });
   }, []);
   console.log(hot);
+  console.log(hot.img, "hsjd");
 
   if (state) {
-    alert("Payment done.");
     setTimeout(() => {
       history.push("/");
-    }, 1000);
+    }, 4000);
   }
-
+  if (state) {
+    return (
+      <img
+        src="https://www.farehawker.com/airlines-group-booking/indigo/img/success.gif"
+        alt=""
+      />
+    );
+  }
   return (
     <div>
       <div className="container">
@@ -159,7 +166,7 @@ const PaymentCard = () => {
               </div>
               <div>
                 <img
-                  src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/83/20/8320038_v4.jpeg"
+                  src={hot.img === undefined ? "" : hot.img[0]}
                   alt="img"
                   style={{ width: "200px", height: "150px" }}
                 />
@@ -182,27 +189,28 @@ const PaymentCard = () => {
               <div style={{ textAlign: "left" }}>
                 <h5>Price Drop</h5>
               </div>
-              {/* <div style={{ textAlign: "right" }}>
-                  ₹
-                  {
-                    (hot?.deals.sort(function (a, b) {
-                      return a - b;
-                    }),
-                    hot?.deals[0])
-                  }
-                </div> */}
+              <div style={{ textAlign: "right" }}>
+                ₹
+                {
+                  (hot.deals?.sort(function (a, b) {
+                    return a - b;
+                  }),
+                  hot.deals === undefined ? "" : hot.deals[0])
+                }
+              </div>
             </div>
             <div className="box-1">
               <div style={{ textAlign: "left" }}>
                 <h5>25% coopan discount</h5>
               </div>
               <div style={{ textAlign: "right" }}>
-                {/* {
-                    (hot?.deals.sort(function (a, b) {
-                      return a - b;
-                    }),
+                {
+                  (hot.deals?.sort(function (a, b) {
+                    return a - b;
+                  }),
+                  hot.deals &&
                     Math.floor(hot.deals[0] - (hot.deals[0] * 25) / 100))
-                  } */}
+                }
               </div>
             </div>
             <div className="breakline"></div>

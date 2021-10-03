@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(5, 18%);
   height: 50px;
-  width: 600px;
+  width: 550px;
   /* border: 2px solid orange; */
   margin-left: 160px;
   /* padding: 1% */
@@ -33,6 +33,17 @@
   /* margin-top: 20px; */
 }
 
+.trivago11 {
+  height: 80px;
+  width: 100px;
+  /* border: 2px solid brown; */
+}
+
+.trivago1 {
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
 .secondlogin {
   display: grid;
   grid-template-columns: repeat(3, 22%);
@@ -40,7 +51,7 @@
   height: 50px;
   width: 350px;
   /* border: 2px solid green; */
-  margin-left: 250px;
+  margin-left: 170px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -70,16 +81,10 @@
   text-decoration: none;
   text-decoration-thickness: initial;
 } */
-.lo:hover {
-  background-color: white;
-}
 
 .logo1 {
   height: 200px;
   width: 200px;
-}
-.first a:hover {
-  border-bottom: 1px solid #007cc2;
 }
 
 .secondlogin > select:hover {
@@ -162,8 +167,9 @@
 
 .dropdown,
 .dropdown1 {
-  position: relative;
-  display: inline-block;
+  /* position: relative;
+  display: inline-block; */
+  background-color: white;
 }
 
 .dropdown-content,
