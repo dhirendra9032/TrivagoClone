@@ -1,5 +1,5 @@
 # TrivagoClone
-We were clone the trivago.com as our first react project. 
+trivago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. 
 
 # The home page----
 navbar, search-bar, crousel, Footer--
