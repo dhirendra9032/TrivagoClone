@@ -17,7 +17,7 @@ export default function AllHotels() {
   // let history = useHistory();
 
   useEffect(() => {
-    axios.get("http://localhost:3004/MainData").then((res) => {
+    axios.get("https://trivago-json.herokuapp.com/MainData").then((res) => {
       const arr = [];
       res.data.forEach((res) => {
         if (res.location === city) {
