@@ -14,16 +14,18 @@ const PaymentCard = () => {
   const { id } = useParams();
   // console.log(id);
   useEffect(() => {
-    axios.get(`http://localhost:3004/MainData/${id}`).then((res) => {
-      // const arr = [];
-      // res.data.forEach((r) => {
-      //   if (r.id === id) {
-      //     arr.push(r);
-      //   }
-      // });
+    axios
+      .get(`https://trivago-json.herokuapp.com/MainData/${id}`)
+      .then((res) => {
+        // const arr = [];
+        // res.data.forEach((r) => {
+        //   if (r.id === id) {
+        //     arr.push(r);
+        //   }
+        // });
 
-      setHot(res.data);
-    });
+        setHot(res.data);
+      });
   }, []);
   console.log(hot);
   console.log(hot.img, "hsjd");
